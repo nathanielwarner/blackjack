@@ -126,7 +126,16 @@ public class Player
                     if(attempt == 0)
                     {
                         String text = txt.getText();
-                        int input = Integer.parseInt(text);
+                        boolean nonInt = false;
+                        int input;
+                        try
+                        {
+                            input = Integer.parseInt(text);
+                        }
+                        catch (NumberFormatException e)
+                        {
+                            input = 0;
+                        }
                         if (input < 1 || input > balance)
                         {
                             JOptionPane.showMessageDialog(null, "Please enter a bet between $1 and your current balance.", "Error", JOptionPane.NO_OPTION);
