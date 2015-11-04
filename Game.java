@@ -7,9 +7,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * Created by APCS4 on 5/12/2015.
- */
 public class Game implements Interactive
 {
     private boolean pause;
