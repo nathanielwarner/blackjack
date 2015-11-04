@@ -4,9 +4,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
-/**
- * Created by APCS4 on 5/12/2015.
- */
 public class GamePanel extends JPanel implements MouseListener
 {
 
