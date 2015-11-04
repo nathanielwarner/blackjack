@@ -2,9 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-/**
- * Created by APCS4 on 5/28/2015.
- */
 public class Player
 {
     private ArrayList<Card> cards;
