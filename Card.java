@@ -4,9 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * Created by APCS4 on 5/14/2015.
- */
 public class Card
 {
     private static final String hiddenUrl = "cards/hidden.png";
