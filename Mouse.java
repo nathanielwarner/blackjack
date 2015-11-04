@@ -3,9 +3,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.Point2D;
 
-/**
- * Created by APCS4 on 5/21/2015.
- */
 public class Mouse
 {
     private Mouse() {}
