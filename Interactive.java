@@ -1,8 +1,5 @@
 import java.awt.*;
 
-/**
- * Created by APCS4 on 5/22/2015.
- */
 public interface Interactive
 {
     int NO_CHANGE = -1;
