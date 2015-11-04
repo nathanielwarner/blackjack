@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by APCS4 on 5/12/2015.
- */
 public class Deck
 {
 
