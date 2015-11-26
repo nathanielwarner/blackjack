@@ -1,4 +1,4 @@
 # blackjack
 A simple blackjack game in Java/Graphics2D.
 
-![Game Window](screenshot.jpg =800x622)
+<img src="screenshot.jpg" width="800" height="622" />
