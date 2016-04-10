@@ -1,6 +1,6 @@
 # blackjack
 A simple blackjack game in Java/Graphics2D.<br>
-To compile, simply run make. Or, 
+The source files can be compiled by running make. Or,  
 <a href="https://mega.nz/#!NRskmZpL!EWvPFLckRaWAc6DpleuIzHXnHea09w2mPbWT4Gl0l6A">
 	download the executable</a>.
 
