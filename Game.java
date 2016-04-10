@@ -70,13 +70,13 @@ public class Game implements Interactive
         // Initialize the background and button images
         try
         {
-            background = ImageIO.read(new File("img/table.png"));
-            hitButton = ImageIO.read(new File("img/hit-button.png"));
-            standButton = ImageIO.read(new File("img/stand-button.png"));
-            doubleButton = ImageIO.read(new File("img/double-button.png"));
-            splitButton = ImageIO.read(new File("img/split-button.png"));
-            exitButton = ImageIO.read(new File("img/exit-button.png"));
-        } catch (IOException e)
+            background = GamePanel.getImageFromFile("/img/table.png");
+            hitButton = GamePanel.getImageFromFile("/img/hit-button.png");
+            standButton = GamePanel.getImageFromFile("/img/stand-button.png");
+            doubleButton = GamePanel.getImageFromFile("/img/double-button.png");
+            splitButton = GamePanel.getImageFromFile("/img/split-button.png");
+            exitButton = GamePanel.getImageFromFile("/img/exit-button.png");
+        } catch (Exception e)
         {
             e.printStackTrace();
         }

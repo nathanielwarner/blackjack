@@ -25,10 +25,10 @@ public class MainMenu implements Interactive
     {
         try
         {
-            splashImage = ImageIO.read(new File("img/splash.png"));
-            newGameButton = ImageIO.read(new File("img/newgame-button.png"));
-            howToButton = ImageIO.read(new File("img/how-to-play-button.png"));
-        } catch (IOException e)
+            splashImage = GamePanel.getImageFromFile("/img/splash.png");
+            newGameButton = GamePanel.getImageFromFile("/img/newgame-button.png");
+            howToButton = GamePanel.getImageFromFile("/img/how-to-play-button.png");
+        } catch (Exception e)
         {
             e.printStackTrace();
         }

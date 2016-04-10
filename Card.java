@@ -31,8 +31,8 @@ public class Card
         rank = cardRank;
         try
         {
-            image = ImageIO.read(new File("cards/" + rank + "_of_" + suit + ".png"));
-        } catch (IOException e)
+            image = GamePanel.getImageFromFile("/cards/" + rank + "_of_" + suit + ".png");
+        } catch (Exception e)
         {
             e.printStackTrace();
         }
@@ -67,8 +67,8 @@ public class Card
     {
         try
         {
-            hiddenImage = ImageIO.read(new File(hiddenUrl));
-        } catch (IOException e)
+            hiddenImage = GamePanel.getImageFromFile(hiddenUrl);
+        } catch (Exception e)
         {
             e.printStackTrace();
         }

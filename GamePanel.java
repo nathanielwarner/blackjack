@@ -3,6 +3,10 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.IOException;
+import java.io.File;
+import java.net.URL;
 
 public class GamePanel extends JPanel implements MouseListener
 {
@@ -24,7 +28,7 @@ public class GamePanel extends JPanel implements MouseListener
         setSize(SIZE);
         setPreferredSize(SIZE);
         addMouseListener(this);
-        //renderingHints = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        renderingHints = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         setBackground(Color.BLACK);
         interactive = new MainMenu();
     }
@@ -35,7 +39,7 @@ public class GamePanel extends JPanel implements MouseListener
 
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-        //g2d.setRenderingHints(renderingHints); // Enable anti-aliasing\
+        g2d.setRenderingHints(renderingHints); // Enable anti-aliasing\
         if (cmd != null)
         {
             int c = Integer.parseInt(cmd);
@@ -80,6 +84,11 @@ public class GamePanel extends JPanel implements MouseListener
         frame.setVisible(true);
 
     }
+	
+	public static BufferedImage getImageFromFile(String filename) throws IOException
+	{
+		return ImageIO.read(GamePanel.class.getResourceAsStream(filename));
+	}
 
     /**
      * Invoked when the mouse button has been clicked (pressed
