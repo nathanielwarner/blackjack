@@ -10,4 +10,4 @@ jar -cfm Blackjack.jar Manifest.txt *.class img cards
 ```
 Or, you can download the executable JAR file <a href="https://mega.nz/#!NRskmZpL!EWvPFLckRaWAc6DpleuIzHXnHea09w2mPbWT4Gl0l6A">here</a>.
 
-<img src="screenshot.png" width="800" height="622" />
+<img src="screenshot.png" width="865" height="696" />
