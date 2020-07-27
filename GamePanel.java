@@ -69,6 +69,7 @@ public class GamePanel extends JPanel implements MouseListener
 
     public static void main(String[] args)
     {
+        System.setProperty("sun.java2d.opengl", "true");
         JFrame frame = new JFrame();
         frame.setResizable(false);
         frame.setTitle("Blackjack");
